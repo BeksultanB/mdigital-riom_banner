@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MDigital & Riom</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        document.fonts.ready.then(function () {
+            document.body.style.visibility = 'visible';
+        });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=block"
+        rel="stylesheet">
+    <style id="reset-css">
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+
+        *,
+        *:after,
+        *:before {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        :focus,
+        :active {
+            outline: none;
+        }
+
+        a:focus,
+        a:active {
+            outline: none;
+        }
+
+        nav,
+        footer,
+        header,
+        aside {
+            display: block;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-size: 100%;
+            line-height: 1;
+            font-size: 14px;
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        input,
+        button,
+        textarea {
+            font-family: inherit;
+        }
+
+        input::-ms-clear {
+            display: none;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        button::-moz-focus-inner {
+            padding: 0;
+            border: 0;
+        }
+
+        a,
+        a:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: 400;
+        }
+    </style>
+    <style>
+        @keyframes blink {
+            0% {
+                text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.671);
+            }
+
+            50% {
+                text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.671);
+            }
+
+            100% {
+                text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.671);
+            }
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .wrapper {
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+        }
+
+        .mdigital-img {
+            width: 600px;
+        }
+
+        .collab-icon {
+            color: white;
+            font-family: 'Mulish', sans-serif;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 60px;
+        }
+
+        .riom {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            padding-bottom: 30px;
+        }
+
+        .riom-img {
+            width: 130px;
+        }
+
+        .riom-text {
+            color: white;
+            font-family: 'Mulish', sans-serif;
+            font-size: 100px;
+            font-weight: 800;
+            letter-spacing: 5px;
+        }
+
+        .line {
+            height: 1px;
+            width: 500px;
+            background-color: white;
+        }
+
+        .text {
+            padding-top: 30px;
+            color: white;
+            font-family: 'Mulish', sans-serif;
+            font-size: 60px;
+            font-weight: 500;
+            padding-top: 30px;
+            animation: blink 2s ease-in infinite;
+        }
+
+        @media (max-width: 800px) {
+            .mdigital-img {
+                width: 400px;
+            }
+
+            .riom {
+                padding-bottom: 20px;
+            }
+
+            .riom-img {
+                width: 80px;
+            }
+
+            .riom-text {
+                font-size: 70px;
+            }
+
+            .line {
+                width: 300px;
+            }
+
+            .text {
+                padding-top: 20px;
+                font-size: 45px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .mdigital-img {
+                width: 250px;
+            }
+
+            .collab-icon {
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+            .riom {
+                gap: 10px;
+            }
+
+            .riom-img {
+                width: 60px;
+            }
+
+            .riom-text {
+                font-size: 50px;
+            }
+
+            .line {
+                width: 200px;
+            }
+
+            .text {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .mdigital-img {
+                width: 200px;
+            }
+
+            .collab-icon {
+                font-size: 30px;
+                line-height: 30px;
+            }
+
+            .riom {
+                gap: 5px;
+            }
+
+            .riom-img {
+                width: 45px;
+            }
+
+            .riom-text {
+                font-size: 40px;
+            }
+
+            .line {
+                width: 150px;
+            }
+
+            .text {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="mdigital">
+                <img class="mdigital-img" src="./mdigital-logo.svg" alt="#">
+            </div>
+            <h3 class="collab-icon">
+                ×
+            </h3>
+            <div class="riom">
+                <h3 class="riom-text">
+                    RIOM
+                </h3>
+                <img class="riom-img" src="./riom-logo.svg" alt="#">
+            </div>
+            <div class="line"></div>
+            <h2 class="text">
+                Сайт в разработке
+            </h2>
+        </div>
+    </div>
+</body>
+
+</html>
